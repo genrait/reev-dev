@@ -15,7 +15,7 @@ REPO=reev
 
 git describe --tags --dirty >VERSION
 
-sudo docker build . \
+docker build . \
     --build-arg version_file=VERSION \
     --file utils/docker/Dockerfile \
     --pull \
